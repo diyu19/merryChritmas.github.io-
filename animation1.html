@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/animation/css/animate.css">
+   
+</head>
+<body>
+    <div class="ani1">
+        <div class="Ani1container">
+
+            <div class="header">   
+                <h2><span>Merry Chritmas  |</span><br> 25<sup>th</sup> December 2024</h2></div>
+            
+        </div>
+    </div>
+    <script src="/animation/css/anime.min.js"></script>
+    <script>
+        const container=document.querySelector('.Ani1container')
+        for(var i=0;i<=100;i++){
+            const blocks=document.createElement('div')
+            blocks.classList.add('block')
+            container.appendChild(blocks)
+        }
+        function animationBlocks(){
+
+            anime({
+                targets:'.block',
+                translateX:function(){
+                    return anime.random(-700,700)
+                },
+                translateY:function(){
+                    return anime.random(-500,500)
+                },
+                scale:function(){
+                    return anime.random(1,5)
+                },
+                backgroundColor: function() {
+        return    "red"
+    },
+                easing:'linear',
+                duration:3000,
+                delay:anime.stagger(10),
+                complete:animationBlocks
+                
+
+            })
+        }
+        animationBlocks()
+    </script>
+</body>
+</html>
