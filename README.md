@@ -5,7 +5,7 @@
 
 This is a simple animated web page created using HTML and CSS. The page features smooth animations and responsive design for an engaging user experience. The animations are implemented using pure CSS (no JavaScript).
 
-website Link is :https://diyu19.github.io/merryChritmas.github.io-/ 
+website Link is :  https://diyu19.github.io/merryChritmas.github.io-/ 
 ## Features
 - **Responsive design**: The page is designed to adapt to different screen sizes, ensuring a smooth experience on mobile, tablet, and desktop devices.
 - **CSS animations**: Various elements of the page, including text, images, and buttons, are animated using CSS for smooth transitions and effects.
